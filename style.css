@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/imgs/background\ certo.avif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+body>img{
+    width: 400px;
+}
+#tigrinho{
+    width: 850px;
+}
+#ondeficaosaldo{
+    display: flex;
+    font-size: 20px;
+}
+input{
+    background-color: rgb(253, 207, 137);
+    border: solid 1px rgb(255, 190, 94);
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+}
+#aposta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    top: -540px;
+    left: 100px;
+    height: 500px;
+    width: 450px;
+}
+#aposta>h1{
+    font-size: 55px;
+}
+button{
+    background-color: rgb(253, 207, 137);
+    border: solid 1px rgb(255, 190, 94);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#overlay img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+#overlay img {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+#adicionar{
+    position: absolute;
+    top: 800px;
+    left: 1700px;
+}
