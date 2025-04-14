@@ -94,3 +94,26 @@ button{
     top: 800px;
     left: 1700px;
 }
+.anuncios{
+    position: fixed;
+    width: 320px;
+    height: 320px;
+    left: 100px;
+    top: 400px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.anuncios>img{
+    width: 300px;
+}
+#logo{
+    position: fixed;
+    top: 50px;
+}
+#tigrinho{
+    position: fixed;
+    top: 300px;
+}
